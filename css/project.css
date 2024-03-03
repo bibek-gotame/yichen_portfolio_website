@@ -7,7 +7,7 @@
 }
 
 
-button {
+.project-btn button {
     align-items: center;
     background-color: transparent;
     color: #000000;
@@ -24,7 +24,7 @@ button {
     padding: 1rem;
   }
   
-  button:before {
+ .project-btn  button:before {
     background-color: #000000;
     content: "";
     display: inline-block;
@@ -34,7 +34,7 @@ button {
     width: 0;
   }
   
-  button:hover:before {
+ .project-btn  button:hover:before {
     background-color: #000000;
     width: 6rem;
   }
@@ -73,7 +73,7 @@ button {
 }
 
 
-.card {
+.project_container .card {
     position: relative;
     max-width: 30rem;
     width: 100%;
@@ -92,7 +92,7 @@ button {
 
 
 
-.card:hover {
+.project_container .card:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
 }
@@ -111,7 +111,7 @@ button {
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.card:hover .card__content {
+.project_container .card:hover .card__content {
     transform: rotateX(0deg);
 }
 
@@ -122,7 +122,7 @@ button {
     font-weight: 700;
 }
 
-.card:hover svg {
+.project_container .card:hover svg {
     scale: 0;
 }
 
@@ -131,9 +131,64 @@ button {
     font-size: 14px;
     color: #ffffff;
     line-height: 1.4;
+    padding-bottom: 1rem;
 }
 
 
+/* ----------cta--------------- */
+.cta {
+    
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+  }
+  
+  .cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+  }
+  
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+  
+  .cta:active svg {
+    transform: scale(0.9);
+  }
+  
+  .hover-underline-animation {
+    font-weight: bold;
+    position: relative;
+    color: rgb(255, 0, 0);
+    padding-bottom: 20px;
+  }
+  
+  .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
 
 .card-1{
 }
