@@ -2,9 +2,8 @@ header {
     width: 100%;
     padding-top: 1rem;
     position: fixed;
-    /* border: 1px solid red; */
     padding-inline: 1rem;
-    z-index: 2;
+    z-index: 10000;
 }
 
 a{
