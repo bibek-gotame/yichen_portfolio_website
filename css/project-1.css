@@ -18,6 +18,7 @@ a {
     gap: 1rem;
 }
 
+
 .right {
     display: flex;
     flex-direction: column;

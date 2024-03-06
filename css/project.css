@@ -6,6 +6,7 @@
     padding-bottom: 3rem;
 }
 
+/* --------------.project-btn---------- */
 
 .project-btn button {
     align-items: center;
@@ -22,7 +23,9 @@
     outline: 0;
     border: 0;
     padding: 1rem;
+    margin-bottom: 2rem;
   }
+  
   
  .project-btn  button:before {
     background-color: #000000;
@@ -197,6 +200,11 @@
 
 /* sm */
 @media (min-width: 640px) {
+  .project {
+  
+    padding-inline: 3rem;
+}
+
 
     .project .box-up {
 
