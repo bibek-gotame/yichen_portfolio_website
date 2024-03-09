@@ -44,7 +44,7 @@
 /* contact-down */
 
 .contact-down {
-  padding-top: 2rem;
+  margin-top: 2rem;
   padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
@@ -257,9 +257,150 @@
 }
 
 
+/* ---------enter the message---------- */
+.message{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  /* display: flex; */
+  /* width: fit-content; */
+  /* overflow: hidden; */
+}
+.input-container {
+  position: relative;
+}
+
+.input {
+  padding: 10px;
+  height: 40px;
+  max-width: 30rem;
+  width: 100%;
+  border: 2px solid #0B2447;
+  border-top: none;
+  border-bottom: none;
+  font-size: 16px;
+  background: transparent;
+  outline: none;
+  box-shadow: 7px 7px 0px 0px #0B2447;
+  transition: all 0.5s;
+}
+
+.input:focus {
+  box-shadow: none;
+  transition: all 0.5s;
+}
+
+.label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #0B2447;
+  transition: all 0.5s;
+  transform: scale(0);
+  z-index: -1;
+}
+
+.input-container .topline {
+  position: absolute;
+  content: "";
+  background-color: #0B2447;
+  width: 0%;
+  height: 2px;
+  right: 0;
+  top: 0;
+  transition: all 0.5s;
+}
+
+.input-container input[type="text"]:focus ~ .topline {
+  width: 35%;
+  transition: all 0.5s;
+}
+
+.input-container .underline {
+  position: absolute;
+  content: "";
+  background-color: #0B2447;
+  width: 0%;
+  height: 2px;
+  right: 0;
+  bottom: 0;
+  transition: all 0.5s;
+}
+
+.input-container input[type="text"]:focus ~ .underline {
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.input-container input[type="text"]:focus ~ .label {
+  top: -10px;
+  transform: scale(1);
+  transition: all 0.5s;
+}
+
+/*--------- enter message btn-------- */
+.message .btn{
+  padding: 0;
+  margin-top: 1rem;
+  width: 10rem;
+}
+.cssbuttons-io-button {
+  /* margin: 0; */
+  background: #8f8f8f;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #714da6;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
 
 /* xs */
-@media (min-width: 475px) {}
+/* @media (min-width: 475px) {} */
 
 /* sm */
 @media (min-width: 640px) {
@@ -267,7 +408,6 @@
     padding-inline: 5rem;
 
   }
-
 
 
  .contact-down .btns {

@@ -8,7 +8,8 @@
 
 /* --------------.project-btn---------- */
 
-.project-btn button {
+.project-btn button,
+.about button {
     align-items: center;
     background-color: transparent;
     color: #000000;
@@ -27,7 +28,8 @@
   }
   
   
- .project-btn  button:before {
+ .project-btn  button:before,
+ .about button:before {
     background-color: #000000;
     content: "";
     display: inline-block;
@@ -37,7 +39,8 @@
     width: 0;
   }
   
- .project-btn  button:hover:before {
+ .project-btn  button:hover:before,
+ .about :hover:before {
     background-color: #000000;
     width: 6rem;
   }
@@ -145,7 +148,9 @@
     background: none;
     cursor: pointer;
   }
-  
+  .cta a{
+    color: white;
+  }
   .cta span {
     padding-bottom: 7px;
     letter-spacing: 4px;
@@ -193,8 +198,8 @@
   }
   
 
-.card-1{
-}
+/* .card-1{
+} */
 /* xs */
 @media (min-width: 475px) {}
 
